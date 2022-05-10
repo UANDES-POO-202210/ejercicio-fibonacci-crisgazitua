@@ -1,11 +1,11 @@
 fs=require("fs")
 
 function Fibonacci(lim){
-    const Fn = [0,1];
+    const F = [0,1];
     for(let n=2; n<lim; n++){
-        Fn[n] = Fn[n-1] + Fn[n-2];
+        F[n] = F[n-1] + F[n-2];
     }
-    return Fn[n];
+    return F[n];
 }
 
 fs.readfile("number.txt", "utf8", function(err, data){
